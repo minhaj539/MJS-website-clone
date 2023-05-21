@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DataVinci Assignment</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@300;400;500;600;1000&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Inter", sans-serif;
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <div class="header-container">
+        <div class="logo">
+          <img
+            src="https://www.mjselectricalsupplies.com.au/assets/website_logo.png?1683786746"
+            alt=""  style="width:100%"
+          />
+        </div>
+        <div class="search-container">
+          <div class="search">
+            <input type="search" placeholder="Search item..." id="input" />
+            <div class="icn">
+              <span class="material-icons icon" id="icn" style="color: #00adef; width: 30px"
+              >search</span>
+            </div>
+            
+          </div>
+          <div class="cart">
+            <span class="material-icons">add_shopping_cart</span>
+            <span>My cart : </span>
+            <input class="cart-count" id="main-count-container" type="text" value="0" style="width: 20px; border: none; " disabled="true">
+          </div>
+          <div class="call">
+            <span>Need help?</span>
+            <div class="phone-no">
+              <img
+                src="https://www.mjselectricalsupplies.com.au/assets/themes/2021-08-zellis/images/phone_icon.png?1683786746"
+                alt=""
+              />
+              <span style="color: #00adef; font-size: 20px">123-456-789</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar">
+        <button>AIR MOVEMENT</button>
+        <button>CABLE</button>
+        <button>CIRCUIT PROTECTION</button>
+        <button>CONDUIT & DUCTING</button>
+        <button>ELECTRICA ACCESSORIES</button>
+        <button>INDUSTRIAL</button>
+        <button>LIGHTING</button>
+        <button>SERVICE PROVIDER</button>
+        <button>SMART HOME & SECURITY</button>
+        <button>SWITCHBOARDS</button>
+        <button>SWITCHGEAR</button>
+        <button>TOOLS</button>
+        <button>TV & DATA</button>
+      </nav>
+    </header>
+    <main>
+      <div class="main-body"></div>
+      <div class="product-details">
+        <div class="product-image">
+          <img
+            src="https://www.mjselectricalsupplies.com.au/assets/full/TPS25TE.jpg?20210204030351"
+            alt=""
+            style="width: 30vw"
+          />
+        </div>
+        <div class="description">
+          <span class="desc">2.5mm Twin and Earth (100mtr Roll)</span>
+          <span id="model-no">SKU: TPS25TE</span>
+          <span class="price">AU $170.50</span>
+          <div class="stock">
+            <span class="material-icons" style="color: #2fa401;">shopping_basket</span>
+            <span style="color: #2fa401;">in stock</span>
+          </div>
+          <div class="pay">
+            <span id="pay-later" style="font-size: large; font-weight: bolder"
+              >BUY NOW, PAY <br />
+              LATER</span
+            >
+            <div class="after-pay">
+              <img
+                src="https://www.mjselectricalsupplies.com.au/assets/themes/2021-08-zellis/images/afterpay.png?1683786746"
+                alt=""
+              />
+              <div class="zip">
+                <span>or from $10/week with </span>
+                <img
+                  src="https://static.zipmoney.com.au/assets/default/product-widget/img/rebrand/zip-button-wht.svg"
+                  alt=""
+                  style="width: 4vw"
+                />
+              </div>
+            </div>
+          </div>
+
+          <label for="%">Quantity: </label>
+          <div class="cart-flex">
+            <!-- <h4>Quantity</h4> <br> -->
+
+            <div class="quantity-flex">
+              <input id="6" class="twin"
+                type="text"
+                style="width: 8vw; font-weight: bold"
+                disabled="true"
+                value="1"
+              />
+              <div class="btns">
+                <button id="increasing-btn6" class="material-icons increasing-btn twin-inc-btn">
+                  arrow_drop_up
+                </button>
+                <button id="decreasing-btn6" class="material-icons decreasing-btn twin-dec-btn">
+                  arrow_drop_down
+                </button>
+              </div>
+            </div>
+            <button id="main-btn" class="cart-btn add-to-cart twin-btn">ADD TO CART</button>
+          </div>
+
+          <label for="#"> Calculate Shipping:</label>
+          <div class="shipping-container">
+            <input type="text" id="country" value="Australia" disabled="true" style="background-color: white;"/>
+            <input type="text" id="post-code" placeholder="Post Code" />
+            <button id="calculate">CALCULATE</button>
+          </div>
+        </div>
+      </div>
+
+
+
+       <!-- CARD CONTAINER ------------------------------------------------------- -->
+      <div class="card-container">
+        <div class="card" id="card1">
+          <img
+            src="https://www.mjselectricalsupplies.com.au/assets/thumbL/TPS25TE.jpg?20210204031559"
+            style="width: 200px"
+            alt=""
+          />
+          <p>2.5mm Twin and Earth (100mtr Roll)</p>
+          <span style="font-size: larger; color: #00adef" class="price" id="price1"> AU $103.40</span>
+
+          <div class="add-to-cart-container">
+            <div class="quantity" id="quantity1">
+              <input id="1"
+                type="text"
+                style="width: 20px; text-align: end; font-weight: bold"
+                disabled="true"
+                value="1"
+              />
+              <button id="inceasing-btn1" class="material-icons increasing-btn">
+                arrow_drop_up
+              </button>
+              <button id="decreasing-btn1" class="material-icons decreasing-btn">
+                arrow_drop_down
+              </button>
+            </div> 
+            <button id="add-to-cart-1" class="add-to-cart">Add to cart</button>
+          </div>
+        </div>
+         <div class="card" id="card2">
+          <img
+            src="https://www.mjselectricalsupplies.com.au/assets/thumb/SB32.jpg?1683786746"
+            style="width: 200px"
+            alt=""
+          />
+          <p>2.5mm Twin and Earth (100mtr Roll)</p>
+          <span style="font-size: larger; color: #00adef" class="price">AU $4.50</span>
+          <div class="add-to-cart-container">
+            <div class="quantity" id="quantity2">
+              <input id="2"
+                type="text"
+                style="width: 20px; text-align: end; font-weight: bold"
+                disabled="true"
+                value="1"
+              />
+              <button id="inceasing-btn2" class="material-icons increasing-btn">
+                arrow_drop_up
+              </button>
+              <button id="decreasing-btn2" class="material-icons decreasing-btn">
+                arrow_drop_down
+              </button>
+            </div>
+            <button id="add-to-cart-2" class="add-to-cart">Add to cart</button>
+          </div>
+        </div>
+        <div class="card" id="card3">
+          <img
+            src="https://www.mjselectricalsupplies.com.au/assets/thumb/NHPNL140L.jpg?1683786746"
+            style="width: 200px"
+            alt=""
+          />
+          <p>2.5mm Twin and Earth (100mtr Roll)</p>
+          <span style="font-size: larger; color: #00adef" class="price">AU $18.37</span>
+          <div class="add-to-cart-container">
+            <div class="quantity" id="quantity3">
+              <input id="3"
+                type="text"
+                style="width: 20px; text-align: end; font-weight: bold"
+                disabled="true"
+                value="1"
+              />
+              <button id="inceasing-btn3" class="material-icons increasing-btn">
+                arrow_drop_up
+              </button>
+              <button id="decreasing-btn3" class="material-icons decreasing-btn">
+                arrow_drop_down
+              </button>
+            </div>
+            <button id="add-to-cart-3" class="add-to-cart">Add to cart</button>
+          </div>
+        </div>
+        <div class="card" id="card4">
+          <img
+            src="https://www.mjselectricalsupplies.com.au/assets/thumb/CLITPFLS20LED.jpg?1683786746"
+            style="width: 200px"
+            alt=""
+          />
+          <p>2.5mm Twin and Earth (100mtr Roll)</p>
+          <span style="font-size: larger; color: #00adef" class="price">AU $34.10</span>
+          <div class="add-to-cart-container">
+            <div class="quantity" id="quantity4">
+              <input id="4"
+                type="text"
+                style="width: 20px; text-align: end; font-weight: bold"
+                disabled="true"
+                value="1"
+              />
+              <button id="inceasing-btn4" class="material-icons increasing-btn">
+                arrow_drop_up
+              </button>
+              <button id="decreasing-btn4" class="material-icons decreasing-btn">
+                arrow_drop_down
+              </button>
+            </div>
+            <button id="add-to-cart-4" class="add-to-cart">Add to cart</button>
+          </div>
+        </div>
+        <div class="card" id="card5">
+          <img
+            src="https://www.mjselectricalsupplies.com.au/assets/thumbL/TPS25TE.jpg?20210204031559"
+            style="width: 200px"
+            alt=""
+          />
+          <p>2.5mm Twin and Earth (100mtr Roll)</p>
+          <span style="font-size: larger; color: #00adef" class="price">AU $103.40</span>
+          <div class="add-to-cart-container">
+            <div class="quantity" id="card5">
+              <input id="5"
+                type="text"
+                style="width: 20px; text-align: end; font-weight: bold"
+                disabled="true"
+                value="1"
+              />
+              <button id="inceasing-btn5" class="material-icons increasing-btn">
+                arrow_drop_up
+              </button>
+              <button id="decreasing-btn5" class="material-icons decreasing-btn">
+                arrow_drop_down
+              </button>
+            </div>
+            <button id="add-to-cart-5" class="add-to-cart">Add to cart</button>
+          </div>
+        </div>
+      </div> 
+
+
+      <!-- ------------------------------------------------END OF CARDS CONTAINER>   -->
+
+      <section class="cta-section" id="cta-section">
+        <div class="cta-container">
+          <div class="left">
+            <img
+              src="https://www.mjselectricalsupplies.com.au/assets/thumbL/TPS25TE.jpg?20210204031559"
+              alt=""
+              width="60vw"
+            />
+            <div class="details">
+              <span class="desc">2.5mm Twin and Earth (100mtr Roll)</span>
+
+              <div class="stock">
+                <span class="price">AU $170.50</span>
+                <span class="material-icons" style="color: #2fa401;">shopping_basket</span>
+                <span style="color: #2fa401;">in stock</span>
+              </div>
+              
+              
+            </div>
+          </div>
+          <div class="right">
+            <div class="cart-flex">
+              <h4>Quantity</h4> <br> 
+              <span>Quantity</span>
+              <div class="quantity-flex">
+                <input id="7" class="twin"
+                  type="text"
+                  style="width: 8vw; font-weight: bold"
+                  disabled="true"
+                  value="1"
+                />
+                <div class="btns">
+                  <button id="increasing-btn7" class="material-icons increasing-btn twin-inc-btn">
+                    arrow_drop_up
+                  </button>
+                  <button id="decreasing-btn7" class="material-icons decreasing-btn twin-dec-btn">
+                    arrow_drop_down
+                  </button>
+                </div>
+              </div>
+              <button class="cart-btn cta-add-to-cart add-to-cart twin-btn" id="add-to-cart-7">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
